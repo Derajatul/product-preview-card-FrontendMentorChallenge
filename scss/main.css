@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  margin: 20px;
+  width: 330px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 330px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+.card .container p.perfume {
+  letter-spacing: 3px;
+  margin-top: 15px;
+  padding: 0 15px 0 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 14px;
+}
+.card .container p.pbody {
+  padding: 0 15px 0 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 14px;
+  margin-top: 15px;
+}
+.card .container h1 {
+  padding: 0 15px 0 15px;
+  font-family: "Fraunces", serif;
+  margin-top: 10px;
+}
+.card .container .price {
+  color: hsl(158deg, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  display: inline-block;
+  padding: 0 15px 0 15px;
+  margin-top: 15px;
+}
+.card .container .discount {
+  display: inline;
+}
+.card .container .button {
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  background-color: hsl(158deg, 36%, 37%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin: 15px auto 20px auto;
+  border-radius: 5px;
+}
+.card .container a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 510px;
+  }
+  img {
+    border-radius: 5px 0 0 5px !important;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block !important;
+    width: 255px !important;
+  }
+  .button {
+    width: 225px !important;
+  }
+}
